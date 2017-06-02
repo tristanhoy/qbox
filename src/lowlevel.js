@@ -18,7 +18,7 @@ module.exports = (nacl) => {
       additionalKeyMaterial = [ additionalKeyMaterial ]
     } else if (additionalKeyMaterial[0] instanceof Uint8Array) {
       for (let i = 1; i < additionalKeyMaterial.length; i++) {
-        if (!(additionalKeyMaterial[i] instanceof Uint8Array)) { throw new TypeError('unexpected type, use Uint8Array or Uint8Array[]') }
+        if (!(additionalKeyMaterial[i] instanceof Uint8Array)) throw new TypeError('unexpected type, use Uint8Array or Uint8Array[]')
       }
     } else {
       throw new TypeError('unexpected type, use Uint8Array or Uint8Array[]')
