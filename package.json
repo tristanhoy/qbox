@@ -1,0 +1,42 @@
+{
+  "name": "qbox",
+  "version": "1.0.0",
+  "description": "TweetNaCl + NTRU Post-Quantum Hybrid Crypto",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard --fix && mocha",
+    "lint": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tristanhoy/qbox.git"
+  },
+  "keywords": [
+    "ntru",
+    "post",
+    "quantum",
+    "nacl",
+    "tweetnacl"
+  ],
+  "author": "Tristan Hoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tristanhoy/qbox/issues"
+  },
+  "homepage": "https://github.com/tristanhoy/qbox#readme",
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  },
+  "dependencies": {
+    "ntru": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "mocha": "^3.4.2",
+    "standard": "^10.0.2",
+    "tweetnacl": "^1.0.0"
+  }
+}

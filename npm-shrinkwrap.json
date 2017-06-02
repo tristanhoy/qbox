@@ -1,0 +1,12 @@
+{
+  "name": "qbox",
+  "version": "1.0.0",
+  "lockfileVersion": 1,
+  "dependencies": {
+    "ntru": {
+      "version": "2.0.1",
+      "resolved": "https://registry.npmjs.org/ntru/-/ntru-2.0.1.tgz",
+      "integrity": "sha1-IzhGU1i30oJ69HIxC+aYoP0AYuQ="
+    }
+  }
+}
