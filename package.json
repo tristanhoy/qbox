@@ -1,7 +1,7 @@
 {
   "name": "qbox",
   "version": "1.0.0",
-  "description": "TweetNaCl + NTRU Post-Quantum Hybrid Crypto",
+  "description": "TweetNaCl-based Quantum Transitional Hybrid Crypto",
   "main": "index.js",
   "scripts": {
     "test": "standard --fix && mocha",
