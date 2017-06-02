@@ -56,5 +56,12 @@ module.exports = (nacl) => {
 
   ntruBox.keyPair.sendOnly = nacl.box.keyPair
 
+  ntruBox.publicKeyLength = nacl.box.publicKeyLength + ntru.publicKeyBytes
+  ntruBox.secretKeyLength = nacl.box.secretKeyLength + ntru.privateKeyBytes
+  ntruBox.sharedKeyLength = nacl.box.sharedKeyLength
+  ntruBox.kemLength = ntru.cyphertextBytes
+  ntruBox.nonceLength = nacl.box.nonceLength
+  ntruBox.overheadLength = nacl.box.overheadLength
+
   return ntruBox
 }
