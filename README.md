@@ -65,8 +65,8 @@ the given nonce, which must be unique for each distinct message for a key pair.
 Returns an encrypted and authenticated message, which is `ntruBox.overheadLength` longer than the original message, as well as NTRU-encapsulated key material for calculating the shared key on the receiver's side.
 
 	{
-		box: ...,  // Uint8Array with encrypted and authenticated message
-		kem: ...   // Uint8Array with 1022-byte NTRU-encapsulated key material
+       box: ...,  // Uint8Array with encrypted and authenticated message
+       kem: ...   // Uint8Array with 1022-byte NTRU-encapsulated key material
 	}
 
 #### ntruBox.open(box, nonce, theirPublicKey, mySecretKey, kem)
@@ -80,8 +80,8 @@ Returns the original message, or `false` if authentication fails.
 Returns a precomputed shared key which can be used in `ntruBox.after` or `ntruBox.open.after`, as well as NTRU-encapsulated key material for calculating the shared key on the receiver's side.
 
 	{
-		sharedKey: ...,  // Uint8Array with 32-byte shared key
-		kem: ...         // Uint8Array with 1022-byte NTRU-encapsulated key material
+       sharedKey: ...,  // Uint8Array with 32-byte shared key
+       kem: ...         // Uint8Array with 1022-byte NTRU-encapsulated key material
 	}
 
 #### ntruBox.open.before(theirPublicKey, mySecretKey, kem)
@@ -126,9 +126,9 @@ This component is used to build quantum-transitional constructions based on `nac
 
 	// tweetnacl dependency is injected
 	module.exports = (nacl) => {
-		const qbox = require('qbox').lowlevel(nacl)
+       const qbox = require('qbox').lowlevel(nacl)
 
-		// define your quantum-transitional module here
+       // define your quantum-transitional module here
 	}
 
 #### qbox(message, nonce, theirPublicKey, mySecretKey, extraKeyMaterial)
